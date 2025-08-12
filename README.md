@@ -1,1 +1,1 @@
-# Encrypter
+pip install -r requirements.txt
